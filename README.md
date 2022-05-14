@@ -25,13 +25,12 @@ $ composer require frostaly/var-exporter
 The VarExporter works like `var_export()`. It takes any value and returns the PHP code representation for that value:
 
 ```php
-echo \Frostaly\VarExporter\VarExporter::export(['foo' => 'Hello', 'bar' => 'World', 'baz' => [true, 1.0, null]]);
+echo \Frostaly\VarExporter\VarExporter::export(['foo' => 'bar', 'baz' => [true, 1.0, null]]);
 
 ```
 ```php
 [
-    'foo' => 'Hello',
-    'bar' => 'World',
+    'foo' => 'bar',
     'baz' => [
         true,
         1.0,
