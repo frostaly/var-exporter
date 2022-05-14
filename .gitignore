@@ -1,0 +1,5 @@
+coverage/
+vendor/
+composer.lock
+.phpcs-cache
+.phpunit-cache

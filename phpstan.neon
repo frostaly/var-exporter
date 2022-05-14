@@ -1,0 +1,9 @@
+parameters:
+    paths:
+        - src
+    level: max
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+    ignoreErrors:
+        - '#Call to an undefined method [a-zA-Z0-9\\_]+::__serialize\(\)#'
+        - '#Call to an undefined method [a-zA-Z0-9\\_]+::__unserialize\(\)#'
