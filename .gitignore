@@ -1,5 +1,6 @@
 coverage/
 vendor/
+coverage.xml
 composer.lock
 .phpcs-cache
 .phpunit-cache
