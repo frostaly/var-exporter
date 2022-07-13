@@ -24,6 +24,7 @@ class ArrayEncoder implements EncoderInterface
      */
     public function encode(Encoder $encoder, mixed $value): array
     {
+        $encoded = [];
         $array = (array) $value;
         $omitKey = array_is_list($array);
 
@@ -34,6 +35,6 @@ class ArrayEncoder implements EncoderInterface
                 var_export($key, true) . ' => ',
             );
         }
-        return isset($encoded) ? ['[', $encoded, ']'] : ['[]'];
+        return $encoded ? ['[', $encoded, ']'] : ['[]'];
     }
 }

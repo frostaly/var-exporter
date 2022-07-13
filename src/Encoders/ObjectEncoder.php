@@ -42,7 +42,8 @@ class ObjectEncoder implements EncoderInterface
     protected function isInstantiable(object $object, array $parameters): bool
     {
         try {
-            return $object == new ($object::class)(...$parameters);
+            $class = $object::class;
+            return $object == new $class(...$parameters);
         } catch (\Throwable) {
             return false;
         }
